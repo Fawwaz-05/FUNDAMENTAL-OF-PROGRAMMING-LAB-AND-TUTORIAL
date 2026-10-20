@@ -19,7 +19,7 @@ public class L2Q1 {
         
         double result = (fah-32)/1.8 ;
         
-        System.out.printf("FOR TEMPERATURE IN CELSIUS IS : "+"%.2f%n"+result);
+        System.out.printf("FOR TEMPERATURE IN CELSIUS IS : "+"%.2f%n",result);
     }
     
 }
