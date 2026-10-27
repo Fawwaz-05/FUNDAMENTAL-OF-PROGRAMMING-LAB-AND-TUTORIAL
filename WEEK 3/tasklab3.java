@@ -27,45 +27,19 @@ public class task {
                 cor[i][1] = in.nextInt();
            
         }
-        
-        int divide1 ,divide2 ;
-       
-               divide1 = cor[0][0] - cor[1][0];
-               divide2 = cor[0][0] - cor[2][0];
-               
-               
-               if (divide1 == 0 && divide2 == 0){
-                   System.out.println("OUTPUT : FALSE ");
-               } else {
+
+        int slope1,slope2;
                    
-                   int slope1,slope2;
+                   slope1 = (cor[1][1] - cor[0][1]) * (cor[2][0] - cor[0][0]);
+                   slope2 = (cor[2][1] - cor[0][1]) * (cor[1][0] - cor[0][0]);
                    
-                   slope1 = (cor[0][1] - cor[1][1]) / divide1;
-                   slope2 = (cor[0][1] - cor[2][1]) / divide2;
-                   
-                   if (slope1 == 1 && slope2 ==1 ) {
+                   if (slope1 == slope2 ) {
                        System.out.println("OUTPUT : FALSE");
                    } else {
                        System.out.println("OUTPUT : TRUE");
                    }
                }
-                
-                   
-                
-           
-        
-        
-        
-        
-        
-        
-        
-        
-        
-    
-        
-        
-        
+
         
     }
     
